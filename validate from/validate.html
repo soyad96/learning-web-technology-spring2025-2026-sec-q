@@ -1,0 +1,101 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Person Profile</title>
+<script src="validate.js"></script>
+</head>
+
+<body>
+
+<form onsubmit="return validateForm()">
+
+<table border="1" width="500" align="center" cellpadding="8">
+
+<tr>
+<th colspan="2">
+<h2>PERSON PROFILE</h2>
+</th>
+</tr>
+
+<tr>
+<td>Name</td>
+<td>
+<input type="text" id="name" name="name">
+</td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td>
+<input type="text" id="email" name="email">
+</td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+</td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td>
+<input type="text" id="day" size="2"> /
+<input type="text" id="month" size="2"> /
+<input type="text" id="year" size="4">
+(dd/mm/yyyy)
+</td>
+</tr>
+
+<tr>
+<td>Blood Group</td>
+<td>
+<select id="blood">
+<option>Select</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>O+</option>
+<option>O-</option>
+<option>AB+</option>
+<option>AB-</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Degree</td>
+<td>
+<input type="checkbox" name="degree"> SSC
+<input type="checkbox" name="degree"> HSC
+<input type="checkbox" name="degree"> BSc
+<input type="checkbox" name="degree"> MSc
+</td>
+</tr>
+
+<tr>
+<td>Photo</td>
+<td>
+<input type="file" id="photo">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="right">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
+```
